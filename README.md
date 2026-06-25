@@ -130,7 +130,7 @@ This project enables management to:
 
 # 📷 Dashboard Preview
 
-![Noventra Dashboard](noventradashboardscreenshot.jpg)
+![Noventra Dashboard](Noventra dashboard screenshot.JPG)
 
 ---
 

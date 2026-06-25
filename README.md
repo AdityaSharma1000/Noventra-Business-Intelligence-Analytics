@@ -130,7 +130,8 @@ This project enables management to:
 
 # 📷 Dashboard Preview
 
-> *(Add a screenshot of your Power BI dashboard here.)*
+> *(<img width="1300" height="729" alt="Noventra dashboard screenshot" src="https://github.com/user-attachments/assets/18d7fcdf-04ed-4f8c-a2b2-10d2e4f123b0" />
+)*
 
 Example:
 

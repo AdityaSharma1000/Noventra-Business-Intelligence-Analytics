@@ -1,6 +1,6 @@
 # Business Questions & Insights
 
-This document explains the business value behind each SQL query, view, stored procedure, and trigger used in the Noventra sales analysis. The objective is to demonstrate that the project answers real business questions rather than only showcasing SQL syntax.
+This document explains the business value behind each SQL query, view, stored procedure, and trigger used in the Noventra End-to-End Business Intelligence Solution project. The objective is to demonstrate that the project answers real business questions rather than only showcasing SQL syntax.
 
 ## Dataset Overview
 - **Source:** Noventra end to end sales performance analytics

@@ -130,7 +130,19 @@ This project enables management to:
 
 # 📷 Dashboard Preview
 
-![Noventra Dashboard](Noventra dashboard screenshot.JPG)
+> *(Add a screenshot of your Power BI dashboard here.)*
+
+Example:
+
+```
+Images/dashboard.png
+```
+
+Then use:
+
+```markdown
+![Dashboard Preview](Images/dashboard.png)
+```
 
 ---
 

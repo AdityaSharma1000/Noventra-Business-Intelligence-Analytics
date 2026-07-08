@@ -1,147 +1,278 @@
-# 📊 Noventra End-to-End Business Intelligence Solution
+# Noventra Business Intelligence & Analytics Platform
 
-An end-to-end Business Intelligence project built for **Noventra**, a fictional e-commerce smart solutions company. The project demonstrates a complete analytics pipeline—from raw data cleaning and SQL database normalization to business analysis and interactive Power BI dashboard enabling data-driven decision-making.
+An end-to-end data analytics project demonstrating how raw business data can be transformed into meaningful business insights using Excel, SQL Server, and Power BI.
 
-> **Note:** Noventra is a fictional company created solely for portfolio purposes.
+This project simulates a real-world analytics workflow for a fictional global e-commerce company, **Noventra**, covering everything from data preparation and database design to interactive dashboards and executive-level reporting.
+
 ---
 
-## 🚀 Project Overview
+# Project Overview
 
-Businesses generate massive volumes of transactional data every day. However, raw data alone does not help decision-makers. This project demonstrates how raw sales data can be transformed into meaningful insights through a modern analytics pipeline.
+The objective of this project is to analyze business performance across sales, customers, products, logistics, and regional markets while demonstrating the complete data analyst workflow.
 
-The project covers:
+The project answers real business questions such as:
 
-- Data cleaning and preparation
+- Is revenue growth healthy?
+- Which customers generate the highest lifetime value?
+- Which products drive revenue?
+- Where are discounts hurting profitability?
+- Which shipping methods create delivery delays?
+- Which markets should receive future investment?
+
+---
+
+# Business Problem
+
+Management wants a centralized analytics solution that can:
+
+- Monitor company performance
+- Improve operational efficiency
+- Identify customer segments
+- Optimize pricing strategy
+- Track logistics performance
+- Support data-driven decision making
+
+---
+
+# Tech Stack
+
+| Tool | Purpose |
+|-------|----------|
+| Microsoft Excel | Data Cleaning & Preparation |
+| SQL Server | Database Design & Business Analysis |
+| SQL Server Management Studio | Query Development |
+| Power BI Desktop | Dashboard Development |
+| DAX | Business Metrics |
+| Power Query | Data Transformation |
+
+---
+
+# Project Workflow
+
+```
+Raw Dataset
+      │
+      ▼
+Excel Data Cleaning
+      │
+      ▼
+SQL Server Normalization (3NF)
+      │
+      ▼
+Analytical SQL Queries
+      │
+      ▼
+Views
+Stored Procedures
+Triggers
+      │
+      ▼
+Power BI Data Model
+      │
+      ▼
+DAX Measures
+      │
+      ▼
+Interactive Dashboards
+      │
+      ▼
+Business Insights
+```
+
+---
+
+# Database Design
+
+The dataset was normalized into a star schema to improve data quality and query performance.
+
+### Fact Table
+
+- Orders
+
+### Dimension Tables
+
+- Customers
+- Products
+- Locations
+- Dates
+
+The Orders table uses a surrogate key (`order_line_id`) because multiple products can belong to a single order.
+
+---
+
+# SQL Features
+
+The project demonstrates:
+
 - Database normalization (3NF)
-- SQL-based business analysis
-- KPI generation
-- Interactive executive dashboard
-- Business decision support
-
----
-
-## 🏗️ Project Architecture
-
-```
-Excel (Data Cleaning)
-        │
-        ▼
-SQL Server
-• Normalization (3NF)
-• Constraints
-• Views
-• Stored Procedures
-• Triggers
-• Business Analysis
-        │
-        ▼
-Power BI
-• Executive Dashboard
-• KPIs
-• Business Insights
-• Interactive Visualizations
-```
-
----
-
-# 🛠️ Tech Stack
-
-| Technology | Purpose |
-|------------|---------|
-| Excel | Raw Data Source & Data Cleaning |
-| SQL Server | Data Modeling & Business Analysis |
-| Power BI | Dashboard & Visualization |
-| DAX | KPI & Time Intelligence Measures |
-
----
-
-# 💼 Business Problems Solved
-
-This dashboard helps organizations answer important business questions such as:
-
-- Is the business growing compared to last year?
-- Which products generate the highest revenue?
-- Which product categories perform the best?
-- Which customer segment contributes the most revenue?
-- Which regions require additional focus?
-- Is the average customer spending increasing?
-- What are the company's top revenue-generating products?
-
----
-
-# 📊 Business Impact
-
-This project enables management to:
-
-- Monitor business performance from a single dashboard
-- Reduce manual reporting effort
-- Improve inventory planning
-- Support pricing decisions
-- Optimize marketing campaigns
-- Identify profitable customer segments
-- Allocate resources based on regional performance
-- Make faster data-driven decisions
-
----
-
-# 🔑 SQL Features Implemented
-
-- Database Design
-- Data Normalization (3NF)
-- Primary & Foreign Keys
-- Constraints
-- Views
+- Star schema modelling
+- Common Table Expressions (CTEs)
+- Window Functions
+- Aggregate Functions
+- CASE Statements
+- Ranking Functions
+- Analytical Views
 - Stored Procedures
 - Triggers
-- Aggregate Functions
-- Window Functions
-- CTEs
-- Ranking Functions
-- Business Analysis Queries
+- Audit Logging
 
 ---
 
-# 📊 Power BI Features
+# Analytical Views
 
-- Interactive Dashboard
-- KPI Cards
-- Time Intelligence Measures
-- DAX Calculations
-- Dynamic Slicers
-- Executive Dashboard Design
+The project includes multiple reusable SQL views including:
+
+- Product Performance
+- Customer Segment Insights
+- Customer Lifetime Value
+- RFM Segmentation
+- Monthly Revenue
+- Yearly Revenue
+- Repeat Purchase Analysis
+- Shipping Logistics
 
 ---
 
-# 🎯 Skills Demonstrated
+# Stored Procedures
+
+- Customer Purchase History
+- Sales Between Dates
+- Customer Churn Analysis
+
+---
+
+# Data Governance
+
+To demonstrate enterprise database concepts, the project includes audit triggers that automatically log every INSERT, UPDATE, and DELETE performed on the Orders table.
+
+---
+
+# Power BI Dashboards
+
+## Executive Dashboard
+
+Focuses on overall business health.
+
+Highlights:
+
+- Revenue
+- Orders
+- Average Order Value
+- Average Selling Price
+- YoY Growth
+- Revenue Breakdown
+- Pricing Simulator
+
+---
+
+## Customer Intelligence Dashboard
+
+Analyzes customer behaviour using:
+
+- Customer Lifetime Value
+- RFM Segmentation
+- Customer Segments
+- Repeat Customers
+- Revenue by Age Group
+- Customer Growth
+
+---
+
+## Product Intelligence Dashboard
+
+Analyzes product profitability.
+
+Includes:
+
+- Discount Analysis
+- Top Products
+- Category Performance
+- Margin Risk
+- Revenue Trends
+- Discount Revenue Loss
+
+---
+
+# Business Insights
+
+Some of the key findings include:
+
+- Revenue increased by 25.3% while AOV declined, indicating volume-driven growth.
+- Consumer customers contributed over half of total revenue.
+- Corporate customers generated the highest customer lifetime value.
+- Technology products generated the highest revenue.
+- Furniture experienced the highest concentration of heavy discounts.
+- Standard Class shipping accounted for all delivery delays.
+- APAC generated the highest revenue while Europe showed the fastest growth.
+
+---
+
+# Skills Demonstrated
 
 - Data Cleaning
-- Data Modeling
-- SQL Server
+- Data Modelling
+- SQL Development
 - Database Design
+- Data Warehousing
+- ETL Concepts
 - Business Intelligence
 - Power BI
 - DAX
 - Data Visualization
-- Business Analytics
-- Dashboard Design
+- Business Analysis
 - KPI Development
+- Dashboard Design
+- Executive Reporting
 
 ---
 
-# 📷 Dashboard Preview
+# Repository Structure
 
-> *(<img width="1300" height="729" alt="Noventra dashboard screenshot" src="https://github.com/user-attachments/assets/18d7fcdf-04ed-4f8c-a2b2-10d2e4f123b0" />
-)*
+```
+├── Dataset/
+│   ├── Raw Data
+│   └── Cleaned Data
+│
+├── SQL/
+│   ├── Database Creation
+│   ├── Normalization
+│   ├── Views
+│   ├── Stored Procedures
+│   ├── Triggers
+│   └── Analytical Queries
+│
+├── Power BI/
+│   └── Noventra.pbix
+│
+├── Report/
+│   └── Business Insights Report.pdf
+│
+├── Dashboard Screenshots/
+│
+└── README.md
+```
 
 ---
 
-# 👨‍💻 Author
+# Key Skills
 
-**Aditya Sharma**
+- Microsoft Excel
+- SQL Server
+- SSMS
+- Power BI
+- DAX
+- Power Query
+- Data Modeling
+- Star Schema
+- SQL Views
+- Stored Procedures
+- Triggers
+- Business Intelligence
+- Data Visualization
+- KPI Reporting
 
- Data Analytics Enthusiast
+---
 
+# About
 
-
-## ⭐ If you found this project useful, consider giving it a Star!
-
+This project was created to demonstrate a complete end-to-end data analytics workflow similar to what a Data Analyst performs in a real business environment. Rather than focusing only on dashboard creation, the project covers data preparation, database design, SQL analytics, business intelligence, and executive reporting to transform raw transactional data into actionable business insights.
